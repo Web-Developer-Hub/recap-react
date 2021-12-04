@@ -37,20 +37,21 @@ function App() {
 			const data = `I am habibor rahaman. i'm self thought leraner. i'm a fullstack developer in both field like web and web application or software application. i expert to javaScript, python, php and there fornt and backend framework like laravel, node.js, django. i passion about this.`;
 			return data;
 		},
-  };
-  
-  //for style object...
-  const header = {
-    backgroundColor: 'green',
-    color: 'white',
-    padding: '10px',
-    textAlign: 'center',
-    borderRadius: '5px',
-  }
+	};
+
+	//for style object...
+	const header = {
+		backgroundColor: 'green',
+		color: 'white',
+		padding: '10px',
+		textAlign: 'center',
+		borderRadius: '5px',
+	}
+
 
 	return (
 		<div className="App">
-      <h1 style={{ color:'green'}}>This is fist react app here...</h1>
+			<h1 style={{ color: 'green' }}>This is fist react app here...</h1>
 
 			<section className="mySection">
 				<div className="card">
@@ -76,8 +77,8 @@ function App() {
 					<h3>My namber is : {number4}</h3>
 					<h3>My add namber is : {number4 + 67}</h3>
 				</div>
-			</section>
-			<br /> <br />
+			</section> <br /> <br />
+
 
 			<div className="details">
 				<h2 style={header}>My Details Here, Here is data tream to an object..</h2>
@@ -86,11 +87,26 @@ function App() {
 				<p>My Skils: {details.skils.join(', ')}</p>
 				<p>Programming Language: {details.language.language.join(', ')}</p>
 				<p>Fontend Framwork: {details.language.frontFramwork.join(', ')}</p>
-        <p>Backend Framwork: {details.language.framwork.join(', ')}</p>
-        <p>About Myself: {details.discrip()}</p>
+				<p>Backend Framwork: {details.language.framwork.join(', ')}</p>
+				<p>About Myself: {details.discrip()}</p>
 			</div>
+
+			{/* calling UserInfo component  */}
+			<UserInfo></UserInfo>
 		</div>
 	);
 }
+
+// another component here....
+function UserInfo() {
+
+	return (
+		<div>
+			<h2>User Information Herre</h2>
+			<p>Name: </p>
+		</div>
+	)
+}
+
 
 export default App;
