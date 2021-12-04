@@ -34,7 +34,7 @@ function App() {
 			frontFramwork: ["React.js", "Vue.js", "Anguler.js"],
 		},
 		discrip() {
-			const data = `I am habibor rahaman. i'm self thought leraner. i'm a fullstack developer in both field like web and web application or software application. i expert to javaScript, python, php and there fornt and backend framework like laravel, node.js, django. i passion about this.`;
+			const data = `I am habibor rahaman. i'm self thought leraner. i'm a fullstack developer in both field like web and web application or software application. i expert to javaScript, python, php and there fornt and backend framework like laravel, node.js, django. i passionate about this.`;
 			return data;
 		},
 	};
@@ -89,22 +89,32 @@ function App() {
 				<p>Fontend Framwork: {details.language.frontFramwork.join(', ')}</p>
 				<p>Backend Framwork: {details.language.framwork.join(', ')}</p>
 				<p>About Myself: {details.discrip()}</p>
-			</div>
+			</div> <br />
 
 			{/* calling UserInfo component  */}
-			<UserInfo></UserInfo>
-			<UserInfo></UserInfo>
+			<div className="data-user">
+				<UserInfo name="Habibor Rahaman" profession="Full Stack Developer" depertment="Computer Science"></UserInfo>
+				<UserInfo name="Abdullah" profession="Pattern Designer" depertment="Computer Science"></UserInfo>
+				<UserInfo name="Mahmudullah" profession="Programmer" depertment="Computer Science"></UserInfo>
+				<UserInfo name="Alex Metual" profession="System Developer" depertment="Computer Science"></UserInfo>
+				<UserInfo name="Jems Jonderld" profession="Problem setter" depertment="Computer Science"></UserInfo>
+				<UserInfo name="Nil Armstrong" profession="Scientest" depertment="Computer Science"></UserInfo>
+				<UserInfo name="Marf" profession=".Net Developer" depertment="Computer Science"></UserInfo>
+				<UserInfo name="Allen Mars" profession="Hybrid System Developer" depertment="Computer Science"></UserInfo>
+			</div> <br />
 		</div>
 	);
 }
 
 // another component here....
-function UserInfo() {
-
+function UserInfo(props) {
+	const { name, profession, depertment } = props;
 	return (
-		<div>
+		<div className="person">
 			<h2>User Information Herre</h2>
-			<p>Name: </p>
+			<p>Name: {name}</p>
+			<p>Profession: {profession}</p>
+			<p>Depertment: {depertment}</p>
 		</div>
 	)
 }
