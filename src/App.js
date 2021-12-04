@@ -48,6 +48,20 @@ function App() {
 		borderRadius: '5px',
 	}
 
+	//person info data
+	const personData = [
+		{ name: "Habibor Rahaman", profession: "Full Stack Developer", depertment: "Computer Science" },
+		{ name: "Abdullah", profession: "Pattern Designer", depertment: "Computer Science" },
+		{ name: "Mahmudullah", profession: "Programmer", depertment: "Computer Science" },
+		{ name: "Alex Metual", profession: "System Developer", depertment: "Computer Science" },
+		{ name: "Jems Jonderld", profession: "Problem setter", depertment: "Computer Science" },
+		{ name: "Nil Armstrong", profession: "Scientest", depertment: "Computer Science" },
+		{ name: "Marf", profession: ".Net Developer", depertment: "Computer Science" },
+		{ name: "Allen Mars", profession: "Hybrid System Developer", depertment: "Computer Science" },
+		{ name: "David Mallan", profession: "Techer", depertment: "Computer Science" },
+		{ name: "Smith Sawon", profession: "System Developer", depertment: "Computer Science" },
+	]
+
 
 	return (
 		<div className="App">
@@ -102,6 +116,12 @@ function App() {
 				<UserInfo name="Marf" profession=".Net Developer" depertment="Computer Science"></UserInfo>
 				<UserInfo name="Allen Mars" profession="Hybrid System Developer" depertment="Computer Science"></UserInfo>
 			</div> <br />
+
+			{/* calling personInfo  component  */}
+			<div className="data-user">
+				{personData.map((person) => <PersonInfo data={person}></PersonInfo>)}
+			</div> <br />
+
 		</div>
 	);
 }
@@ -119,5 +139,17 @@ function UserInfo(props) {
 	)
 }
 
+
+function PersonInfo(props) {
+	const { name, profession, depertment } = props.data;
+	return (
+		<div className="person">
+			<h2>User Information Herre</h2>
+			<p>Name: {name ? name : 'Empty Data'}</p>
+			<p>Profession: {profession ? profession : 'Empty Data'}</p>
+			<p>Depertment: {depertment ? depertment : 'Empty Data'}</p>
+		</div>
+	)
+}
 
 export default App;
