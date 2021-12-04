@@ -61,6 +61,8 @@ function App() {
 		{ name: "David Mallan", profession: "Techer", depertment: "Computer Science" },
 		{ name: "Smith Sawon", profession: "System Developer", depertment: "Computer Science" },
 		{ name: "David Mallan", profession: "Techer", depertment: "Computer Science" },
+		{ name: "Alex Metual", profession: "System Developer", depertment: "Computer Science" },
+		{ name: "Jems Jonderld", profession: "Problem setter", depertment: "Computer Science" },
 		{ name: "Smith Sawon", profession: "System Developer", depertment: "Computer Science" },
 		{ name: "David Mallan", profession: "Techer", depertment: "Computer Science" },
 		{ name: "Smith Sawon", profession: "System Developer", depertment: "Computer Science" },
