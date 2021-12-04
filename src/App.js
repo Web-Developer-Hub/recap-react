@@ -112,9 +112,9 @@ function UserInfo(props) {
 	return (
 		<div className="person">
 			<h2>User Information Herre</h2>
-			<p>Name: {name}</p>
-			<p>Profession: {profession}</p>
-			<p>Depertment: {depertment}</p>
+			<p>Name: {name ? name : 'Empty Data'}</p>
+			<p>Profession: {profession ? profession : 'Empty Data'}</p>
+			<p>Depertment: {depertment ? depertment : 'Empty Data'}</p>
 		</div>
 	)
 }
