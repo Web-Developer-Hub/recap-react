@@ -140,6 +140,7 @@ function UserInfo(props) {
 }
 
 
+//this personInfo componet...
 function PersonInfo(props) {
 	const { name, profession, depertment } = props.data;
 	return (
