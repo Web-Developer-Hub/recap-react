@@ -60,6 +60,20 @@ function App() {
 		{ name: "Allen Mars", profession: "Hybrid System Developer", depertment: "Computer Science" },
 		{ name: "David Mallan", profession: "Techer", depertment: "Computer Science" },
 		{ name: "Smith Sawon", profession: "System Developer", depertment: "Computer Science" },
+		{ name: "David Mallan", profession: "Techer", depertment: "Computer Science" },
+		{ name: "Smith Sawon", profession: "System Developer", depertment: "Computer Science" },
+		{ name: "David Mallan", profession: "Techer", depertment: "Computer Science" },
+		{ name: "Smith Sawon", profession: "System Developer", depertment: "Computer Science" },
+		{ name: "David Mallan", profession: "Techer", depertment: "Computer Science" },
+		{ name: "Smith Sawon", profession: "System Developer", depertment: "Computer Science" },
+		{ name: "David Mallan", profession: "Techer", depertment: "Computer Science" },
+		{ name: "Smith Sawon", profession: "System Developer", depertment: "Computer Science" },
+		{ name: "David Mallan", profession: "Techer", depertment: "Computer Science" },
+		{ name: "Smith Sawon", profession: "System Developer", depertment: "Computer Science" },
+		{ name: "David Mallan", profession: "Techer", depertment: "Computer Science" },
+		{ name: "Smith Sawon", profession: "System Developer", depertment: "Computer Science" },
+		{ name: "David Mallan", profession: "Techer", depertment: "Computer Science" },
+		{ name: "Smith Sawon", profession: "System Developer", depertment: "Computer Science" },
 	]
 
 
