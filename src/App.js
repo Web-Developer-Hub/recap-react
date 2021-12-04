@@ -93,6 +93,7 @@ function App() {
 
 			{/* calling UserInfo component  */}
 			<UserInfo></UserInfo>
+			<UserInfo></UserInfo>
 		</div>
 	);
 }
